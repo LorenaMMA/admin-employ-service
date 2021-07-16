@@ -44,6 +44,5 @@ public class GendersBean implements Serializable {
 	public void setName(int name) {
 		this.name = name;
 	}
-	
-	
+		
 }

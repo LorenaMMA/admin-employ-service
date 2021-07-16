@@ -4,8 +4,7 @@ import java.io.Serializable;
 
 public class RequestGeneralBean implements Serializable {
 
-	private static final long serialVersionUID = 1641776873115039054L;
-	
+	private static final long serialVersionUID = 1641776873115039054L;	
 	private int genderId;
 	private int jobId;
 	private String name;

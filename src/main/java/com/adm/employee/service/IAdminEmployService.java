@@ -7,4 +7,5 @@ public interface IAdminEmployService {
 	
 	ResponseRegistroBean registraEmploy(RequestGeneralBean beanGeneral, String idProveedor);
 
+	
 }

@@ -3,7 +3,6 @@ package com.adm.employee.model;
 import java.io.Serializable;
 
 public class ResponseRegistroBean implements Serializable {
-	
 
 	private static final long serialVersionUID = 1533101408611868412L;
 

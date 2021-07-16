@@ -69,5 +69,5 @@ public class EmployeeWorkedHoursBean implements Serializable {
 
 	public void setWorkedDate(Date workedDate) {
 		this.workedDate = workedDate;
-	}	
+	}
 }

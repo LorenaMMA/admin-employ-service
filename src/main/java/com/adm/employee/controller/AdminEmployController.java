@@ -1,7 +1,6 @@
 package com.adm.employee.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.configurationprocessor.json.JSONObject;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
@@ -27,7 +26,6 @@ public class AdminEmployController {
 	public ResponseEntity<ResponseRegistroBean> actualizarEmpleado(
 			@PathVariable("idemploy") final String empleado, @RequestBody RequestGeneralBean request) {
 		/**Se inicializan los objetos*/
-		JSONObject json = new JSONObject();
 		ResponseRegistroBean datos = adminService.registraEmploy(request, empleado);
 		/** Retorno de respuesta de la peticion */
 		return new ResponseEntity<ResponseRegistroBean>(datos, HttpStatus.OK);

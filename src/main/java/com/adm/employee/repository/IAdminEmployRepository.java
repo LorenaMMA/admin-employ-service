@@ -6,7 +6,6 @@ import org.springframework.data.repository.query.Param;
 
 import com.adm.employee.model.EmployeesBean;
 
-
 public interface IAdminEmployRepository extends CrudRepository<EmployeesBean,Long> {
 
 	@Query(value="select count(*) from EMPLOYEES where name = :nombre and last_name = :apellido", nativeQuery = true)

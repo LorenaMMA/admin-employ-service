@@ -55,4 +55,5 @@ public class JobsBean implements Serializable {
 	public void setSalary(Double salary) {
 		this.salary = salary;
 	}
+	
 }
