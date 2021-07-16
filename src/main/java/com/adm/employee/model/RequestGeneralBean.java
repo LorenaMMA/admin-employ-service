@@ -1,6 +1,7 @@
 package com.adm.employee.model;
 
 import java.io.Serializable;
+import java.sql.Date;
 
 public class RequestGeneralBean implements Serializable {
 
@@ -9,7 +10,7 @@ public class RequestGeneralBean implements Serializable {
 	private int jobId;
 	private String name;
 	private String lastName;
-	private String birthdate;
+	private Date birthdate;
 	
 	/**
 	 * Nueva instancia request general bean.
@@ -50,11 +51,11 @@ public class RequestGeneralBean implements Serializable {
 		this.lastName = lastName;
 	}
 
-	public String getBirthdate() {
+	public Date getBirthdate() {
 		return birthdate;
 	}
 
-	public void setBirthdate(String birthdate) {
+	public void setBirthdate(Date birthdate) {
 		this.birthdate = birthdate;
 	}
 	

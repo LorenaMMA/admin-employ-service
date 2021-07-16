@@ -4,7 +4,7 @@ import org.springframework.data.repository.CrudRepository;
 
 import com.adm.employee.model.JobsBean;
 
-public interface IAdminJobsRepository  extends CrudRepository<JobsBean,Long> {
+public interface IAdminJobsRepository  extends CrudRepository<JobsBean,Integer> {
 
 	
 }

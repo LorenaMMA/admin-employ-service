@@ -23,7 +23,7 @@ public class JobsBean implements Serializable {
 	private int id;
 	
 	@Column(name="NAME")
-	private int name;
+	private String name;
 	
 	@Column(name="SALARY")
 	private Double salary;
@@ -40,11 +40,11 @@ public class JobsBean implements Serializable {
 		this.id = id;
 	}
 
-	public int getName() {
+	public String getName() {
 		return name;
 	}
 
-	public void setName(int name) {
+	public void setName(String name) {
 		this.name = name;
 	}
 

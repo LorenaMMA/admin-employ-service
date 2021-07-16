@@ -1,6 +1,7 @@
 package com.adm.employee.model;
 
 import java.io.Serializable;
+import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -37,7 +38,11 @@ public class EmployeesBean implements Serializable {
 	private String lastName;
 	
 	@Column(name="BIRTHDATE")
-	private String birthdate;
+	private Date birthdate;
+	
+	private JobsBean job;
+	
+	private GendersBean gender;
 
 	public EmployeesBean() {
 		super();
@@ -83,12 +88,28 @@ public class EmployeesBean implements Serializable {
 		this.lastName = lastName;
 	}
 
-	public String getBirthdate() {
+	public Date getBirthdate() {
 		return birthdate;
 	}
 
-	public void setBirthdate(String birthdate) {
+	public void setBirthdate(Date birthdate) {
 		this.birthdate = birthdate;
+	}
+
+	public JobsBean getJob() {
+		return job;
+	}
+
+	public void setJob(JobsBean job) {
+		this.job = job;
+	}
+
+	public GendersBean getGender() {
+		return gender;
+	}
+
+	public void setGender(GendersBean gender) {
+		this.gender = gender;
 	}
 	
 }
