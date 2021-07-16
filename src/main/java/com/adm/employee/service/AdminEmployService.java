@@ -9,7 +9,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.adm.employee.Utils;
 import com.adm.employee.model.EmployeesBean;
 import com.adm.employee.model.JobsBean;
 import com.adm.employee.model.RequestGeneralBean;
@@ -17,6 +16,7 @@ import com.adm.employee.model.ResponseConsultaEmpleadosBean;
 import com.adm.employee.model.ResponseRegistroBean;
 import com.adm.employee.repository.IAdminEmployRepository;
 import com.adm.employee.repository.IAdminJobsRepository;
+import com.adm.employee.utils.Utils;
 
 @Service
 public class AdminEmployService implements IAdminEmployService {
